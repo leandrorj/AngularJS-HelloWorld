@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="helloWord">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello Word</title>
+    <script src="angular.js"></script>
+    <script>
+        angular.module("helloWord", []);
+        angular.module("helloWord").controller("helloWorldCtrl", function($scope){
+          $scope.message = "Hello Word!";
+        });
+
+    </script>
+  </head>
+  <body>
+    <div ng-controller="helloWorldCtrl">
+      {{message}}
+    </div>
+
+  </body>
+</html>
